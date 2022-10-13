@@ -1,0 +1,39 @@
+Source: node-grunt-legacy-util
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12),
+ , grunt <!nocheck>
+ , nodejs
+ , node-grunt-contrib-nodeunit <!nocheck>
+ , node-lodash (>= 4.17.15+dfsg-2~) <!nocheck>
+ , node-async <!nocheck>
+ , node-which <!nocheck>
+ , node-exit <!nocheck>
+ , node-underscore.string <!nocheck>
+ , node-getobject <!nocheck>
+ , node-hooker <!nocheck>
+ , pkg-js-tools (>= 0.9.12~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-legacy-util
+Vcs-Git: https://salsa.debian.org/js-team/node-grunt-legacy-util.git
+Homepage: https://gruntjs.com/
+Rules-Requires-Root: no
+
+Package: node-grunt-legacy-util
+Architecture: all
+Depends:
+ ${misc:Depends},
+ , nodejs
+ , node-lodash
+ , node-async
+ , node-which
+ , node-exit
+ , node-underscore.string
+ , node-getobject
+ , node-hooker
+Description: Some old grunt utils provided for backwards compatibility
+ Node.js is an event-based server-side JavaScript engine.
