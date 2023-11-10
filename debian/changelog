@@ -1,3 +1,30 @@
+node-grunt-legacy-util (2.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix debian/control for Debian::Control (Closes: #1006074)
+
+ -- Yadd <yadd@debian.org>  Sat, 19 Feb 2022 08:57:27 +0100
+
+node-grunt-legacy-util (2.0.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update standards version to 4.6.0, no changes needed
+  * Drop dependency to nodejs
+  * New upstream version 2.0.1
+  * Drop fix-buffer-warning.diff, now included in upstream
+
+ -- Yadd <yadd@debian.org>  Thu, 23 Dec 2021 16:07:15 +0100
+
 node-grunt-legacy-util (1.1.1-1) unstable; urgency=medium
 
   * Team upload

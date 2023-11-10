@@ -5,9 +5,9 @@ Section: javascript
 Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , grunt <!nocheck>
- , nodejs
  , node-grunt-contrib-nodeunit <!nocheck>
  , node-lodash (>= 4.17.15+dfsg-2~) <!nocheck>
  , node-async <!nocheck>
@@ -16,8 +16,7 @@ Build-Depends:
  , node-underscore.string <!nocheck>
  , node-getobject <!nocheck>
  , node-hooker <!nocheck>
- , pkg-js-tools (>= 0.9.12~)
-Standards-Version: 4.5.0
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-legacy-util
 Vcs-Git: https://salsa.debian.org/js-team/node-grunt-legacy-util.git
 Homepage: https://gruntjs.com/
@@ -26,8 +25,7 @@ Rules-Requires-Root: no
 Package: node-grunt-legacy-util
 Architecture: all
 Depends:
- ${misc:Depends},
- , nodejs
+ ${misc:Depends}
  , node-lodash
  , node-async
  , node-which
